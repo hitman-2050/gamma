@@ -1,0 +1,258 @@
+#main {
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/*p1*/
+
+#hello {
+    background-image: linear-gradient(#e0eafc, #cfdef3);
+}
+
+#scr4 {
+    color: blanchedalmond;
+    font-size: xx-large;
+    background: rgb(249, 0, 85);
+    border-radius: 10px;
+    background: linear-gradient(133deg, rgba(249, 0, 83, 0.836) 0%, rgb(9, 9, 121) 35%, rgba(64, 67, 255, 0.808) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#src {
+    color: blanchedalmond;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#scr {
+    height: 53px;
+    border-radius: 3mm;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(3, 163, 196, 1) 100%);
+}
+
+#hllo {
+    font-size: 80px;
+    background: -webkit-linear-gradient(#000000, #434343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.2s;
+}
+
+#heello {
+    text-align: right;
+    background-image: linear-gradient(#ff4b1f, #ff9068);
+    border-radius: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#hlo {
+    text-align: right;
+    background: -webkit-linear-gradient(#2980b9, #2c5045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: larger;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*p2*/
+
+#helllo {
+    background-image: linear-gradient(#b7fffff6, #7be5e5);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 180px);
+    gap: 10px;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 35px;
+    box-shadow: rgba(1, 1, 1, 0.523) 0px 30px 100px 0px, /*box border color*/
+    inset rgba(246, 246, 246, 0) 0 5px 0 5px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    padding: 40px 48px;
+    display: -webkit-box;
+    display: grid;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.cardWrap {
+    margin: 10px;
+    -webkit-transform: perspective(800px);
+    transform: perspective(800px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.cardWrap:hover .cardInfo {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.cardWrap:hover .cardInfo p {
+    opacity: 1;
+}
+
+.cardWrap:hover .cardInfo,
+.cardWrap:hover .cardInfo p {
+    -webkit-transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cardWrap:hover .cardInfo:after {
+    -webkit-transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.cardWrap:hover .cardBg {
+    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), opacity 5s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0.72;
+}
+
+.cardWrap:hover .card {
+    -webkit-transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 30px;
+}
+
+.card {
+    position: relative;
+    -webkit-box-flex: 0;
+    flex: 0 0 170px;
+    width: 160px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 23px;
+    box-shadow: rgba(0, 0, 0, 0.603) 0 30px 60px 0, /*box border color*/
+    inset rgba(246, 246, 246, 0) 0 0 0 5px;
+    -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.card:hover {
+    width: 170px;
+    height: 240px;
+    transition: 0.1s;
+}
+
+.cardBg {
+    opacity: 0.9;
+    position: relative;
+    width: 70%;
+    height: 50%;
+    padding: 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    -webkit-transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    pointer-events: none;
+}
+
+.cardInfo {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    color: rgb(26, 26, 26);
+    text-shadow: rgb(215, 248, 255) 0 2px 3px;
+    -webkit-transform: translateY(40%);
+    transform: translateY(40%);
+    -webkit-transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.cardInfo p {
+    opacity: 0;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 0 2px 3px;
+    -webkit-transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: 0.6s 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.cardInfo * {
+    position: relative;
+    z-index: 1;
+}
+
+.cardInfo:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(transparent), to(rgba(4, 0, 0, 0.537)));
+    background-image: linear-gradient( to bottom, transparent 0%, rgba(0, 0, 0, 0.66) 100%);
+    background-blend-mode: overlay;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: 2s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.cardInfo h1 .cardTitle {
+    font-family: "Playfair Display";
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: rgba(255, 0, 0, 0.5) 0 10px 10px;
+}
+
+#helx1 {
+    padding: 3vh 3vw 3vh 3vw;
+    display: grid;
+    column-gap: 1vw;
+}
+
+
+/*p3*/
+
+#hheloo {
+    background: rgb(43, 43, 43);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 5mm;
+    -webkit-tap-highlight-color: transparent;
+    padding: 1px 8px 2px 8px;
+}
+
+#heleloo {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    font-weight: 9400;
+}
+
+#India {
+    font-size: 20px;
+    background: -webkit-linear-gradient(orange, white, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#helello {
+    background: rgb(20, 20, 94);
+    color: rgb(252, 228, 193);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}

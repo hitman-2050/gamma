@@ -1,0 +1,45 @@
+#heading {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(34, 193, 195, 1) 2%, rgba(45, 97, 253, 1) 97%);
+}
+
+#label {
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 02px;
+}
+
+#s1,
+#s2 {
+    padding: 10px;
+    margin: 10px 0;
+    display: grid;
+    margin: auto;
+}
+
+#submit {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: grid;
+    margin: auto;
+    background: linear-gradient(90deg, rgba(255, 219, 0, 1) 11%, rgba(109, 194, 127, 1) 97%, rgba(0, 212, 255, 1) 100%);
+}
+
+#res {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: grid;
+    margin: auto;
+    color: linear-gradient(90deg, rgba(0, 255, 107, 1) 0%, rgba(6, 163, 40, 1) 97%);
+}
