@@ -24,6 +24,21 @@
     font-size: xx-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+#hello
+{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 480px;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  font-size: 36px;
+  line-height: 1.8em;
+  
+  &:before,
+  &:after {
+    content: '"';
+}
 
 #scr {
     height: 53px;
